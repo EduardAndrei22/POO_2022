@@ -1,22 +1,24 @@
 #include "NumberList.h"
-#include <iostream>
+
 
 void NumberList::Init()
 {
-	count = 0;
+	count = -1;
 }
 
 bool NumberList::Add(int x)
 {
-	count++;
-	numbers[count] = x;
+	
+	numbers[++count] = x;
+	
+	return 1;
 }
 
 void NumberList::Sort()
 {
 	int aux,i,j;
-	for (i = 0; i < count; i++)
-		for ( j = i + 1; j < count; j++)
+	for (i = 0; i <= count; i++)
+		for ( j = i + 1; j <= count; j++)
 			if (numbers[i] > numbers[j])
 			{
 				aux = numbers[i];
@@ -28,6 +30,6 @@ void NumberList::Sort()
 void NumberList::Print()
 {
 	int i;
-	for (i = 0; i < count; i++)
-		cout<<numbers[i]<<' ';
+	for (i = 0; i <= count; i++)
+		std::cout<<numbers[i]<<' ';
 }

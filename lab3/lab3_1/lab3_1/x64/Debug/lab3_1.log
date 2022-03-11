@@ -1,0 +1,5 @@
+﻿  main.cpp
+  Math.cpp
+C:\Users\Edi Andrei\Desktop\facultate\POO\POO_2022\lab3\lab3_1\lab3_1\Math.cpp(87,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Edi Andrei\Desktop\facultate\POO\POO_2022\lab3\lab3_1\lab3_1\Math.cpp(88,2): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
